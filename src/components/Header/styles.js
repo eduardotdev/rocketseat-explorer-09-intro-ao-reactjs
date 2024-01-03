@@ -4,7 +4,6 @@ export const Container = styled.header`
   grid-area: header;
 
   height: 105px;
-  width: 100%;
 
   border-bottom-width: 1px;
   border-bottom-style: solid;
@@ -21,8 +20,8 @@ export const Profile = styled.div`
   align-items: center;
 
   > img {
-    width: 50px;
-    height: 50px;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
   }
 
@@ -32,14 +31,24 @@ export const Profile = styled.div`
     margin-left: 16px;
     line-height: 24px;
 
-    > span {
+    span {
       font-size: 14px;
       color: ${({ theme }) => theme.COLORS.GRAY_100};
     }
 
-    > strong {
+    strong {
       font-size: 18px;
       color: ${({ theme }) => theme.COLORS.WHITE};
     }
+  }
+`
+
+export const Logout = styled.button`
+  border: none;
+  background: none;
+
+  > svg {
+    color: ${({ theme }) => theme.COLORS.GRAY_100};
+    font-size: 36px;
   }
 `
